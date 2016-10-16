@@ -18,48 +18,49 @@ plot(x,t,'bx')
 hold on;
 % plot(xtest,ttest,'ro')
 hold off;
-%% folding
-totalFolds = 10;
-N = length(x(:,1));
-partition = floor(N/totalFolds);
-
-%%
-% Polynomial Order of n
+%% folding details
+totalFolds = 10; % total number of folds
+N = length(x(:,1)); % we find the length of the first column in matrix x
+partition = floor(N/totalFolds); % we determine the size of the partition (2.7 in this case) and take the floor
+%% Polynomial Order of n
 % Changing value of 'order' to choose polynomial order
-order = 8;
+order = 8; % order of polynomial
 X = [];
 Xtest = [];
 
- for k = 0:order
-     X = [X x.^k];
+ for k = 0:order % we loop to compute CV loss and Train loss for each order of the polynomial
+     X = [X x.^k]; % we add a column to matrix for every order n where the new column is x^k
     
-    for fold = 0:totalFolds-1
-        Xfold = X((fold*partition)+1 : (fold+1)*partition,:);
-        Xtrain1 = X(1 : fold*partition,:);
-        Xtrain2 = X(fold*partition + (partition + 1) : end,:);
-        Xtrain = [Xtrain1; Xtrain2];
+    for fold = 0:totalFolds-1 % we loop again to change the partition being tested and trained
+        Xfold = X((fold*partition)+1 : (fold+1)*partition,:); % we slice X to get the rows for the CV (test) partition (1)
+        Xtrain1 = X(1 : fold*partition,:); % we slice X to get the training partition before the CV partition (2)
+        Xtrain2 = X(fold*partition + (partition + 1) : end,:); % we slice X to get the training partition afer the CV partition (3)
+        Xtrain = [Xtrain1; Xtrain2]; % we join the training paritions into one matrix (4)
 
-        ttrain1 = t(1 : fold*partition,1);
-        ttrain2 = t(fold*partition + (partition + 1) : end,1);
-        ttrain = [ttrain1; ttrain2];
-        tfold = t((fold*partition)+1 : (fold+1)*partition,:);
+        tfold = t((fold*partition)+1 : (fold+1)*partition,:); % we partition the labels the same as (1) to validate the results
+        ttrain1 = t(1 : fold*partition,1); % we partition the labels the same as (2) to train the model
+        ttrain2 = t(fold*partition + (partition + 1) : end,1); % we partition the labels the same as (3) train the model
+        ttrain = [ttrain1; ttrain2]; % we join the label training data into one matrix similar to (4)
+        
 
-        % compute model parameters
+        % we learn the model parameters from the training data and label(5)
         w = inv(Xtrain'*Xtrain)*Xtrain'*ttrain; 
-        % model predictions
+        % we find the predicted results using the params in (5) and (1)
         mpred_fold = w'*Xfold';
-        % model for observed data
+        % we see how well the model reflects the observed (training) data
         mpred_observed = w'*Xtrain';
-        % compare values
+        % we compare the CV labels to the predicted results
         compare = [tfold mpred_fold' tfold-mpred_fold'];
-        % loss
 
+        % we store the mean of the squared difference of CV labels and
+        % predicted results to be plotted later
         foldLoss(fold+1,k+1)  = mean((mpred_fold' - tfold).^2);
         trainLoss(fold+1,k+1) = mean((mpred_observed' - ttrain).^2);
     end
  end
 
 %% Plot the results
+% reference: A first course in machine learning chapter one code
 figure(1);
 subplot(121)
 plot(0:order,mean(foldLoss,1),'linewidth',2) % order vs mean of foldloss(vector)(column = order number?)
