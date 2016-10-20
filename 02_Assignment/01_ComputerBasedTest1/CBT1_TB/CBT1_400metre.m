@@ -16,6 +16,7 @@ xtrain = x(1:20,1); %attributes
 ttrain= male400(1:20,2); %target labels
 xtest = x(21:end,1); %attributes
 ttest= male400(21:end,2); %target labels
+t = male400(:,2);
 plot(xtrain,ttrain,'bo')
 hold on;
 plot(xtest,ttest,'ro')
@@ -74,32 +75,41 @@ plot(xtest,mpred_test3,'m'); % plotting line of best fit (3rd order) to test dat
 % Changing data to order of 4
 X4 = [fc xtrain xtrain.^2 xtrain.^3 xtrain.^4];
 Xtest4 = [fc_test xtest xtest.^2 xtest.^3 xtest.^4];
-%% compute model parameters ^4
-w4 = inv(X4'*X4)*X4'*ttrain; 
-%% model predictions
+X4_plot = [x.^0 x x.^2 x.^3 x.^4];
+
+%% regularisation parameters
+lambda = .01;
+order = 5;
+N = order;
+E = eye(size(order));
+% compute model parameters ^4
+w4 = inv(X4'*X4 +N*lambda*E)*X4'*ttrain; 
+% model predictions
 mpred_test4 = w4'*Xtest4';
-%%
+%
 compare4 = [ttest mpred_test4' ttest-mpred_test4'];
-%%
+%
+clf;
+plot(t,w4'*X4_plot','rx');
 plot(xtrain,ttrain,'b.','markersize', 25); %plotting training data as scatterplot (blue)
 hold on;
 plot(xtrain, w4'*X4','b'); % plotting line of best fit (4th order) to training data (blue)
-plot(xtest,ttest,'yo'); % plotting test data as scatterplot (red circles)
-plot(xtest,mpred_test4,'y'); % plotting line of best fit (4th order) to test data (red)
+plot(xtest,ttest,'ro'); % plotting test data as scatterplot (red circles)
+plot(xtest,mpred_test4,'r'); % plotting line of best fit (4th order) to test data (red)
 %% Polynomial Order of 5
 % Changing data to order of 5
 X5 = [fc xtrain xtrain.^2 xtrain.^3 xtrain.^4 xtrain.^5];
 Xtest5 = [fc_test xtest xtest.^2 xtest.^3 xtest.^4 xtest.^5];
-%% compute model parameters ^4
-w5 = inv(X5'*X5)*X5'*ttrain; 
-%% model predictions
-mpred_test5 = w5'*Xtest5';
-%%
-compare5 = [ttest mpred_test5' ttest-mpred_test5'];
-%%
-plot(xtrain,ttrain,'b.','markersize', 25); %plotting training data as scatterplot (blue)
-hold on;
-plot(xtrain, w5'*X5','b'); % plotting line of best fit (4th order) to training data (blue)
-plot(xtest,ttest,'go'); % plotting test data as scatterplot (red circles)
-plot(xtest,mpred_test5,'g'); % plotting line of best fit (4th order) to test data (red)
+% %% compute model parameters ^5
+% w5 = inv(X5'*X5)*X5'*ttrain; 
+% %% model predictions
+% mpred_test5 = w5'*Xtest5';
+% %%
+% compare5 = [ttest mpred_test5' ttest-mpred_test5'];
+% %%
+% plot(xtrain,ttrain,'b.','markersize', 25); %plotting training data as scatterplot (blue)
+% hold on;
+% plot(xtrain, w5'*X5','b'); % plotting line of best fit (4th order) to training data (blue)
+% plot(xtest,ttest,'go'); % plotting test data as scatterplot (red circles)
+% plot(xtest,mpred_test5,'g'); % plotting line of best fit (4th order) to test data (red)
 set(gca,'Color',[0.5 0.5 0.5]);
