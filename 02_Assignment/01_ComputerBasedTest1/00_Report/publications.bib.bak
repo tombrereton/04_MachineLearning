@@ -1,0 +1,16 @@
+@book{Rogers:2011:FCM:2071030,
+ author = {Rogers, Simon and Girolami, Mark},
+ title = {A First Course in Machine Learning},
+ year = {2011},
+ isbn = {1439824142, 9781439824146},
+ edition = {1st},
+ publisher = {Chapman \& Hall/CRC},
+} 
+@misc{WhenIsIt57:online,
+author = {Jim Frost},
+title = {When Is It Crucial to Standardize the Variables in a Regression Model? | Minitab},
+howpublished = {\url{http://blog.minitab.com/blog/adventures-in-statistics/when-is-it-crucial-to-standardize-the-variables-in-a-regression-model}},
+month = {February},
+year = {2016},
+note = {(Accessed on 10/21/2016)}
+}

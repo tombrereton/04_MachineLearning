@@ -16,6 +16,10 @@
 \usepackage{listings}
 \usepackage{hyperref}
 \usepackage{float}
+\usepackage{matlab-prettifier}
+
+
+
 
 % \begin{comment} ... \end{comment{}
 \usepackage{verbatim}
@@ -58,16 +62,14 @@
 
 %=================
 \include{sections/introduction}
-\include{sections/task2}
-
 
 % we use input to include the conclusion, in order to
 % get the bibliography and conclusion on the same page
-\input{sections/conclusion}
+%\input{sections/conclusion}
 
 
 %=================
-\section{Bibliography}
+\section{References}
 \label{bib}
 
 % \nocite is used to display all references from publications.bib -- even
@@ -75,5 +77,10 @@
 \nocite{*} 
 
 \printbibliography[heading=none]
+
+
+\include{sections/appendixA}
+
+\include{sections/appendixB}
 
 \end{document}

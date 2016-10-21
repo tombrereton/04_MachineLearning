@@ -1,8 +1,8 @@
-%% CTB1_400metree
+%% CTB1_400metre
 % Fit of 1st, 2nd, 3rd, and 4th order polynomial to
 % the 400 metre sprint data
-% We will use 10-fold cross-validation to choose the 'best'
-% polynomial order which has lowers error
+% We use 10-fold cross-validation to choose the 'best'
+% polynomial order which has minimum loss
 clear all;close all;
 load olympics.mat
 %% Preamble and rescaling data
@@ -37,7 +37,7 @@ orderTrainMat = [];
         ttrain = [ttrain1; ttrain2]; % we join the label training data into one matrix similar to (4)
 
 
-        % we learn the model parameters from the training data and label(5)
+        % we learn the model parameters from the training data and labels(5)
         w = inv(Xtrain'*Xtrain)*Xtrain'*ttrain; 
         % we find the predicted results using the params in (5) and (1)
         mpred_fold = Xfold*w;
@@ -46,39 +46,39 @@ orderTrainMat = [];
         % we compare the CV labels to the predicted results
         compare = [tfold mpred_fold tfold-mpred_fold];
 
-        % we store the mean of the squared difference of CV labels and
-        % predicted results to be plotted later
+        % we store the mean squared difference of CV labels and
+        % predicted results, to plot later
         foldLoss(fold,k+1)  = mean((mpred_fold - tfold).^2);
-
         trainLoss(fold,k+1) = mean((mpred_observed - ttrain).^2);
     end
     orderFoldMat = [orderFoldMat mean(foldLoss(:,k+1))];
     orderTrainMat = [orderTrainMat mean(trainLoss(:,k+1))];
     
-    % plots and saves to file
-    plot(x,t,'bx');
-    plotTitle = strcat('Fit of Polynomial Model x.^',int2str(k),' to The Data'); 
-    title(plotTitle);
-    xlabel('Rescaled Year Data');
-    ylabel('Time (seconds)');
-    hold on;
-    plot(x,w'*X','r');
-    filename = strcat('model',int2str(k),'.png'); 
-    saveas(gcf,filename);
-    clf;
+% %     plots and saves to file
+% %     comment out to turn off
+%     plot(x,t,'bx');
+%     plotTitle = strcat('Fit of Polynomial Model x.^',int2str(k),' to 400m Data'); 
+%     title(plotTitle,'fontsize',18);
+%     xlabel('Rescaled Year Data','fontsize',16);
+%     ylabel('400m Time (seconds)','fontsize',16);
+%     hold on;
+%     plot(x,w'*X','r');
+%     filename = strcat('model',int2str(k),'.png'); 
+%     saveas(gcf,filename);
+%     clf;
  end
 %% Plot the results
-% reference: A first course in machine learning chapter one code
+% Reference: A First Course in Machine Learning, Chapter One, cv_demo.m
 figure(1);
 subplot(121)
-plot(0:order,orderFoldMat,'linewidth',2); % order vs mean of foldloss(vector)(column = order number?)
-xlabel('Model Order');
-ylabel('Loss');
-title('CV Loss');
+plot(0:order,orderFoldMat,'linewidth',2);
+xlabel('Model Order','fontsize',16);
+ylabel('Loss','fontsize',16);
+title('CV Loss','fontsize',18);
 subplot(122)
 plot(0:order,orderTrainMat,'linewidth',2)
-xlabel('Model Order');
-ylabel('Loss');
-title('Train Loss');
+xlabel('Model Order','fontsize',16);
+ylabel('Loss','fontsize',16);
+title('Train Loss','fontsize',18);
 filename = strcat('CVLossANDTrainLoss',int2str(order),'.png'); 
 saveas(gcf,filename);
