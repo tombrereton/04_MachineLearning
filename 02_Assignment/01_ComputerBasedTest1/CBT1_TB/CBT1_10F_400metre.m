@@ -16,6 +16,10 @@ Npartition = length(x(:,1)); % we find the length of the first column in matrix 
 partition = repmat(floor(Npartition/totalFolds),1,totalFolds); % we determine the size of the partition (2.7 in this case) and take the floor
 partition(end) = Npartition - (totalFolds-1)*partition(1,1);
 pcum = [0 cumsum(partition)];
+%% Permute data
+order = randperm(Npartition);
+x = x(order);
+t = t(order);
 %% Polynomial Order of n
 % Change value of 'order' to choose polynomial order n
 order = 4; % order of polynomial
@@ -64,7 +68,7 @@ orderTrainMat = [];
 %     hold on;
 %     plot(x,w'*X','r');
 %     filename = strcat('model',int2str(k),'.png'); 
-%     saveas(gcf,filename);
+% %     saveas(gcf,filename);
 %     clf;
  end
 %% Plot the results
@@ -80,5 +84,5 @@ plot(0:order,orderTrainMat,'linewidth',2)
 xlabel('Model Order','fontsize',16);
 ylabel('Loss','fontsize',16);
 title('Train Loss','fontsize',18);
-filename = strcat('CVLossANDTrainLoss',int2str(order),'.png'); 
+filename = strcat('CVLossANDTrainLossNotReg',int2str(order),'.png'); 
 saveas(gcf,filename);
