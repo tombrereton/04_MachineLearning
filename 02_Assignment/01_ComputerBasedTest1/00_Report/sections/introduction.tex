@@ -9,7 +9,7 @@ The analysis was performed in Matlab, and the code listings can be found in Appe
 
 \section{Task 1}{\label{s1}
 	
-\subsection{Introduction}
+\subsection{Introduction}\label{Int}
 In Task 1, we are asked to analyse the Olympics men's 400m data. We must find the polynomial function of order \textbf{n} which best fits this data, where \textbf{n} is 1 to 4, and use 10-fold cross-validation to choose the "best" value of \textbf{n}. Refer to Appendix A for the Matlab code used for analysis.
 
 To compute the average cross validation loss, data (attributes and labels) are separated into 10 partitions (i.e. 10-fold), where 1 partition is reserved for testing the model. The 9 remaining partitions are used to learn the model with parameters, $w_{n}$. This models can use the attributes of the test partition to predict the labels, in this case the time ran for the men's 400m. The predicted values can then be compared to the actual values (labels)  from the test partition. The cross validation (CV) loss is calculated by taking the mean squared difference ($msd$) of these two values. This is then repeated 9 more times by rotating the test partition through. The average of these 10 $msd$ values is calculated and then plotted against the order to find the minimum value.
@@ -89,7 +89,7 @@ The remaining models in Figure \ref{men400-1} clearly do not model the data well
 The problem for Task 1 is to find the "best model based on average cross-validation loss." This only considers point 1 from before, therefore, a polynomial function with order 2 best fits the model based on average cross-validation loss.
 
 \subsection{Further Comments}
-Further investigation found if the data was not standardised, a systematic error is produced in the model for orders greater than or equal 4. Figure \ref{men400-1noSt} illustrates shows that for and order of 3 there is not error, but there is for an order of 4. Reviewing literature showed this systematic error is common when dealing with high order polynomial function\cite{WhenIsIt}.Therefore, it is good practice to standardise data when the regression model contains polynomial terms.
+Further investigation found if the data was not standardised, a systematic error is produced in the model for orders greater than or equal 4. Figure \ref{men400-1noSt} illustrates an order of 3 produces no error, but an order of 4 does. Reviewing literature showed this systematic error is common when dealing with high order polynomial function\cite{WhenIsIt}.Therefore, it is good practice to standardise data when the regression model contains polynomial terms.
 
 \begin{figure}[h!] 
 	\centering
@@ -129,7 +129,7 @@ Another point worth mentioning is the effect of permuting (randomising) the attr
 \subsection{Introduction}
 In task 2 we are given the task to find the value of $\lambda$ that gives the 'best' predictive performance on the Olympic men's 100m data using 5-fold cross-validation. In this task, "best" is also defined the same as in \ref{s1}. Refer to Appendix B for the Matlab code used for analysis.
 
-Task 2 uses the same method as Task 1, however, an additional parameter, $\lambda$, is introduced. The calculation for the CV loss essentially remains the same, except now higher order models (complexity) are penalised by the $\lambda$ value.
+Task 2 uses the same method as Task 1, however, an additional parameter, $\lambda$, is introduced. The calculation for the CV loss essentially remains the same as described in \ref{int}, except now higher order models (complexity) are penalised by the $\lambda$ value.
 
 \subsection{Results}
 Figure \ref{fig:LambdaLoss} shows that the best value for $\lambda$ is 0 for this dataset. However, there is an interesting trend for both orders, where it increases until some value and then there is a local minimum. If this is a common trend, and 0 is not always the minimum, this local minimum could be a desired value to minimise loss. 
