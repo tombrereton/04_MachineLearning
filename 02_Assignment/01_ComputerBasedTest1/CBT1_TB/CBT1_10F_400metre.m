@@ -85,4 +85,4 @@ xlabel('Model Order','fontsize',16);
 ylabel('Loss','fontsize',16);
 title('Train Loss','fontsize',18);
 filename = strcat('CVLossANDTrainLossNotReg',int2str(order),'.png'); 
-saveas(gcf,filename);
+% saveas(gcf,filename);
