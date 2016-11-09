@@ -46,24 +46,25 @@ for c = 1:length(cl)
     Probs(:,:,c) = reshape(exp(const - 0.5*diag(temp*inv(tempc)*temp')),size(Xv)); % reshape exp(of function) into size of Xv
 end
 
-Probs = Probs./repmat(sum(Probs,3),[1,1,3]);
-
+% Probs = Probs./repmat(sum(Probs,3),[1,1,3]); % what is this? full bayes rule? how?, is value of contour line?
+% above, divide by sum of probs i.e. divide by marginal??? how does
+% function do this???
 %% Plot the predictive contours
 figure(1);hold off
 for i = 1:3
     subplot(1,3,i);
     hold off
-    for c = 1:length(cl)
+    for c = 1:length(cl) % plot the data points for each class
         pos = find(t==cl(c));
         plot(X(pos,1),X(pos,2),col{c},...
             'markersize',10,'linewidth',2,...
             'markerfacecolor',fcol{c});
         hold on
     end
-    xlim([-3 7])
+    xlim([-3 7]) % set scales
     ylim([-6 6])
     
-    contour(Xv,Yv,Probs(:,:,i));
+    contour(Xv,Yv,Probs(:,:,i)); % plot contour line
     ti = sprintf('Probability contours for class %g',i);
     title(ti);
 end
@@ -86,7 +87,7 @@ for c = 1:length(cl)
     temp = [Xv(:)-class_mean(c,1) Yv(:)-class_mean(c,2)];
     tempc = class_var(:,:,c);
     const = -log(2*pi) - log(det(tempc));
-    Probs(:,:,c) = reshape(exp(const - 0.5*diag(temp*inv(tempc)*temp')),size(Xv));;
+    Probs(:,:,c) = reshape(exp(const - 0.5*diag(temp*inv(tempc)*temp')),size(Xv));
 end
 
 Probs = Probs./repmat(sum(Probs,3),[1,1,3]);

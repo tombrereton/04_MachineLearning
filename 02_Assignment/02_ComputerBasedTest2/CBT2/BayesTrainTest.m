@@ -43,6 +43,7 @@ end
 % for training samples and testing samples
 probab_train = [];
 probab_test = [];
+% testSigma = diag(diag(class_var));
 for c = 1:length(cl)
     sigmac = diag(class_var(c,:));
     
@@ -52,13 +53,13 @@ for c = 1:length(cl)
     
     diff_test = [X_test(:,1)-class_mean(c,1) X_test(:,2)-class_mean(c,2)];
     const_test = 1/sqrt((2*pi)^size(X_test,2) * det(sigmac));
-    probab_test(:,c) = const_train*exp(-0.5*diag(diff_test*inv(sigmac)*diff_test'));
+    probab_test(:,c) = const_train*exp(-0.5*diag(diff_test*inv(sigmac)*diff_test')); % shoud this be const_test not const_train?
     % this is using maximum likelihood, given the uniform size of classes
 end
 
 % get proper probability estimates
-probab_train = probab_train./repmat(sum(probab_train,2),[1,3]);
-probab_test = probab_test./repmat(sum(probab_test,2),[1,3]);
+% probab_train = probab_train./repmat(sum(probab_train,2),[1,3]); % doesn't use prior?
+% probab_test = probab_test./repmat(sum(probab_test,2),[1,3]);
 
 %% find class label predictions from probabilities (with Naive assumption)
 [~,p_train_with] = max(probab_train,[],2); % assign labels as per highest probability
@@ -70,8 +71,8 @@ error_test_with=sum(t_test~=p_test_with); % error - # of mis-classifications
 
 %% Plot the data and predictions (with Naive assumption)
 cl = unique(t_train); % find the number of unique classes from labels
-col_train = {'go','bo','ko'};
-col_test = {'gx','bx','kx'};
+col_train = {'go','co','ko'};
+col_test = {'rx','bx','kx'};
 figure(1);
 hold on
 for c = 1:length(cl)

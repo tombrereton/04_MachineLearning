@@ -19,7 +19,7 @@ w = inv(X'*X)*X'*y;
 pred = X * w;
 %% Loss
 difference = [x, pred, pred - x];
-loss = mean((pred - x).^2);
+loss = mean((pred - y).^2);
 %% Learn model numerically
 meanx = mean(x);
 meany = mean(y);
