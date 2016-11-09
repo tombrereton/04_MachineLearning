@@ -1,5 +1,5 @@
 %% This program trains a Bayesian classifier
-% using the Maximum a Posteriori estimate WITH naive assumption.
+% using the Maximum likelihood estimate WITHOUT naive assumption.
 % We train it on the helthy and diseased datasets
 % provided in cbt2data.mat
 
@@ -33,6 +33,7 @@ probPrior = [probClass1; probClass2]; % We store priors in vector, make matrix a
 % Uncomment to experiment with different priors:
 % probPrior = [.99; 0.01]; % We give diseased class a strong prior
 % probPrior = [0.5; 0.5]; % We compute prior based on 1/C
+% probPrior = [0;1]; % We give diseased class a strong prior
 
 %% Find the mean and variance 
 % Using the Naive (independence) assumption
@@ -41,19 +42,19 @@ cl = unique(t_train); % get total number of classes from test set
 for c = 1:length(cl) % We loop over the number of classes (1,diseased and 2,healthy)
     pos = find(t_train==cl(c)); % We store position of class label in vector
     class_mean(c,:) = mean(X_train(pos,:)); % class-wise & attribute-wise mean
-    class_var(c,:) = var(X_train(pos,:),1); % class-wise & attribute-wise variance
+    class_var(:,:,c) = cov(X_train(pos,:),1); % class-wise & attribute-wise variance
 end
 
 %% Maximum A Posteriori (MAP) classification for new data
-% with the naive assumption, thus we take the diag of variance
-% (see sigma_naive)
+% Without the naive assumption, thus we don't take the diag of variance
+% (see sigma)
 class_probs_new = [];
 
 for c = 1:length(cl)
-    sigma_naive = diag(class_var(c,:)); % we convert row to diagonal elements
-    diff_train = [X_new(:,1)-class_mean(c,1) X_new(:,2)-class_mean(c,2)]; % We compute difference between data points and respective mean
-    const = 1/sqrt((2*pi()^size(X_new,2)*det(sigma_naive))); % we compute the constanst for the gaussian function
-    class_probs_new = [class_probs_new const * exp(-1/2*diag(diff_train * inv(sigma_naive) * diff_train'))* probPrior(c)]; % We use the gaussian function to compute MAP
+    sigma = class_var(:,:,c); % we convert row to diagonal elements
+    diff_train = [X_new(:,1)-class_mean(c,1) X_new(:,2)-class_mean(c,2)]; % We compute difference between data point and respective mean
+    const = 1/sqrt((2*pi()^size(X_new,2)*det(sigma))); % we compute the constanst for the gaussian function
+    class_probs_new = [class_probs_new const * exp(-1/2*diag(diff_train * inv(sigma) * diff_train'))* probPrior(c)]; % We use the gaussian function to compute MLend
 end
 
 %% Classify each example
@@ -71,8 +72,8 @@ Probs = [];
 
 for c = 1:length(cl) % loop over unique classes
     temp = [Xv(:)-class_mean(c,1) Yv(:)-class_mean(c,2)]; % xnew - mean, tnew - mean
-    tempc = diag(class_var(c,:)); % only diagonal, assuming naive? , (co)variance for class
-    const = -log(2*pi) - log(det(tempc)); % is it actually easier with log?, why not -1/2 out front?
+    tempc = (class_var(:,:,c)); % get all rows and columns for each class
+    const = -log(2*pi) - log(det(tempc)); % % We compute constant using log laws, is it actually easier with log?, why not -1/2 out front?
     Probs(:,:,c) = reshape(exp(const - 0.5*diag(temp*inv(tempc)*temp')),size(Xv)) * probPrior(c); % reshape exp(of function) into size of Xv
 end
 
@@ -105,7 +106,7 @@ legend('Diseased', 'Healthy');
 set(gca,'Color',[0.7 0.7 0.7]);
 
 if (savePlots == 1)
-    filename = strcat('MAPtrainingData.png'); 
+    filename = strcat('MAPWONtrainingData.png'); 
     saveas(gcf,filename);
 end
 
@@ -134,7 +135,7 @@ legend('Diseased', 'Healthy');
 set(gca,'Color',[0.7 0.7 0.7]);
 
 if (savePlots == 1)
-    filename = strcat('MAPnewData.png'); 
+    filename = strcat('MAPWONnewData.png'); 
     saveas(gcf,filename);
 end
 
@@ -163,7 +164,7 @@ for i = 1:2
     set(gca,'Color',[0.7 0.7 0.7]);
     
     if (savePlots == 1)
-        filename = sprintf('MAPclassCondContours%s.png', classLabel{i}); 
+        filename = sprintf('MAPWONclassCondContours%s.png', classLabel{i}); 
         saveas(gcf,filename);
     end
 end
@@ -193,7 +194,7 @@ for i = 1:2
     set(gca,'Color',[0.7 0.7 0.7]);
     
     if (savePlots == 1)
-        filename = sprintf('MAPprobContours%s.png', classLabel{i}); 
+        filename = sprintf('MAPWONprobContours%s.png', classLabel{i}); 
         saveas(gcf,filename);
     end
 end

@@ -2,18 +2,24 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Comparison of the CV and Train loss for polynomial models of order \textbf {n}, where \textbf {n} = 0 to 4.\relax }}{3}{figure.caption.4}
+\contentsline {figure}{\numberline {1}{\ignorespaces Comparison of the CV and Train loss for polynomial models of order \textbf {n}, where \textbf {n} = 0 to 4.\relax }}{4}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces The original Olympic men's 400m data (blue crosses) with the polynomial models (red) overlaid.\relax }}{4}{figure.caption.6}
+\contentsline {figure}{\numberline {2}{\ignorespaces Comparison of the CV and Train loss for polynomial models of order \textbf {n}, where \textbf {n} = 0 to 4.\relax }}{5}{figure.caption.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces The original Olympic men's 400m data (blue crosses) with the polynomial models (red) overlaid without data standardisation.\relax }}{5}{figure.caption.7}
+\contentsline {figure}{\numberline {3}{\ignorespaces Comparison of the CV and Train loss for polynomial models of order \textbf {n}, where \textbf {n} = 0 to 4.\relax }}{6}{figure.caption.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Comparision of the CV and Train Loss when it is not standardised (\ref {fig:modelNoRegCV}) and data is permuted (\ref {fig:modelRand}).\relax }}{5}{figure.caption.8}
+\contentsline {figure}{\numberline {4}{\ignorespaces The original Olympic men's 400m data (blue crosses) with the polynomial models (red) overlaid without data standardisation.\relax }}{6}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces The loss vs lambda values for polynomial models with order 1, and 4.\relax }}{6}{figure.caption.9}
+\contentsline {figure}{\numberline {5}{\ignorespaces The original Olympic men's 400m data (blue crosses) with the polynomial models (red) overlaid.\relax }}{7}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Polynomial model with order 1 and varying lambda values.\relax }}{6}{figure.caption.10}
+\contentsline {figure}{\numberline {6}{\ignorespaces The original Olympic men's 400m data (blue crosses) with the polynomial models (red) overlaid.\relax }}{8}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Polynomial model with order 4 and varying lambda values.\relax }}{7}{figure.caption.11}
+\contentsline {figure}{\numberline {7}{\ignorespaces Comparison of the CV and Train loss for polynomial models of order \textbf {n}, where \textbf {n} = 0 to 4.\relax }}{9}{figure.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces The loss vs lambda values for polynomial models with order 1, and 4 with permuted data.\relax }}{7}{figure.caption.12}
+\contentsline {figure}{\numberline {8}{\ignorespaces Comparison of the CV and Train loss for polynomial models of order \textbf {n}, where \textbf {n} = 0 to 4.\relax }}{10}{figure.caption.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {9}{\ignorespaces The original Olympic men's 400m data (blue crosses) with the polynomial models (red) overlaid without data standardisation.\relax }}{11}{figure.caption.14}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {10}{\ignorespaces The original Olympic men's 400m data (blue crosses) with the polynomial models (red) overlaid.\relax }}{12}{figure.caption.15}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {11}{\ignorespaces The original Olympic men's 400m data (blue crosses) with the polynomial models (red) overlaid.\relax }}{13}{figure.caption.16}
