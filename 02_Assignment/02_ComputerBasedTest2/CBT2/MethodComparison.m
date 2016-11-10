@@ -80,10 +80,14 @@ end
 % each class respectively. For example, a column 1 has a ML of 0.7 and
 % column 2 is 0.3, therefore it returns the index (or column) 1.
 difference = [];
+countDisease = [];
+countHealthy = [];
 
 [~,MLClass_new] = max(MLclass_probs_new, [], 2); 
 [~,MLWONClass_new] = max(MLWONclass_probs_new, [], 2); 
 [~,MAPClass_new] = max(MAPclass_probs_new, [], 2); 
 [~,MAPWONClass_new] = max(MAPWONclass_probs_new, [], 2);
 
+countDisease = [sum(MLClass_new==1); sum(MLWONClass_new==1); sum(MAPClass_new==1); sum(MAPWONClass_new==1)];
+countHealthy = [sum(MLClass_new==2); sum(MLWONClass_new==2); sum(MAPClass_new==2); sum(MAPWONClass_new==2)];
 difference = [length(MLClass_new)-sum(MLClass_new==MLWONClass_new), length(MAPClass_new)-sum(MAPClass_new==MAPWONClass_new), length(MLClass_new)-sum(MLClass_new==MAPClass_new)];

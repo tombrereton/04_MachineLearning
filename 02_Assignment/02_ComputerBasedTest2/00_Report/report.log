@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.10)  9 NOV 2016 20:05
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.10.10)  10 NOV 2016 02:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1226,45 +1226,6 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 \@quotereset=\count310
 (./report.aux (./sections/introduction.aux
 
-LaTeX Warning: Label `fig:CVT4' multiply defined.
-
-
-LaTeX Warning: Label `fig:CVT4' multiply defined.
-
-
-LaTeX Warning: Label `fig:modelNoReg1' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:modelNoReg1' multiply defined.
-
-
-LaTeX Warning: Label `fig:model0' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:model0' multiply defined.
-
-
-LaTeX Warning: Label `fig:model1' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:model1' multiply defined.
-
-
-LaTeX Warning: Label `fig:model2' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:model2' multiply defined.
-
-
-LaTeX Warning: Label `fig:model3' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:model3' multiply defined.
-
-
-LaTeX Warning: Label `men400-1' multiply defined.
-
-
 LaTeX Warning: Label `s1' multiply defined.
 
 
@@ -1274,42 +1235,18 @@ LaTeX Warning: Label `Int' multiply defined.
 LaTeX Warning: Label `CVcons' multiply defined.
 
 
-LaTeX Warning: Label `fig:CVT4' multiply defined.
-
-
-LaTeX Warning: Label `t:ModLoss' multiply defined.
-
-
-LaTeX Warning: Label `fig:CVT4' multiply defined.
-
-
-LaTeX Warning: Label `fig:modelNoReg0' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:modelNoReg0' multiply defined.
-
-
-LaTeX Warning: Label `fig:modelNoReg1' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:modelNoReg1' multiply defined.
-
-
-LaTeX Warning: Label `fig:modelNoReg1' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:modelNoReg1' multiply defined.
-
-
-LaTeX Warning: Label `men400-1noSt' multiply defined.
-
-
 LaTeX Warning: Label `s1' multiply defined.
 
 
 LaTeX Warning: Label `Int' multiply defined.
 
 
+LaTeX Warning: Label `fig:modelNoReg1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:modelNoReg1' multiply defined.
+
+
 LaTeX Warning: Label `Int' multiply defined.
 
 
@@ -1337,9 +1274,6 @@ LaTeX Warning: Label `fig:model3' multiply defined.
 LaTeX Warning: Label `sub@fig:model3' multiply defined.
 
 
-LaTeX Warning: Label `men400-1' multiply defined.
-
-
 LaTeX Warning: Label `fig:model0' multiply defined.
 
 
@@ -1364,7 +1298,28 @@ LaTeX Warning: Label `fig:model3' multiply defined.
 LaTeX Warning: Label `sub@fig:model3' multiply defined.
 
 
-LaTeX Warning: Label `men400-1' multiply defined.
+LaTeX Warning: Label `fig:model0' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:model0' multiply defined.
+
+
+LaTeX Warning: Label `fig:model1' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:model1' multiply defined.
+
+
+LaTeX Warning: Label `fig:model2' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:model2' multiply defined.
+
+
+LaTeX Warning: Label `fig:model3' multiply defined.
+
+
+LaTeX Warning: Label `sub@fig:model3' multiply defined.
 
 ) (./sections/appendixA.aux) (./sections/appendixB.aux))
 \openout1 = `report.aux'.
@@ -1736,278 +1691,315 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.66 \include{sections/introduction}
-                                     [1] [2]
+                                     [1]
 \openout2 = `sections/introduction.aux'.
 
  (./sections/introduction.tex
-<images/MLtrainingData.png, id=148, 562.2606pt x 421.575pt>
+LaTeX Font Info:    Try loading font information for TS1+clm2js on input line 4
+.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/cfr-lm/ts1clm2js.fd
+File: ts1clm2js.fd 2008/02/13 Fontinst v1.928 font definitions for TS1/clm2js.
+) [2
+
+]
+<images/MLtrainingData.png, id=152, 562.2606pt x 421.575pt>
 File: images/MLtrainingData.png Graphic file (type png)
 
 <use images/MLtrainingData.png>
-Package pdftex.def Info: images/MLtrainingData.png used on input line 32.
+Package pdftex.def Info: images/MLtrainingData.png used on input line 43.
 (pdftex.def)             Requested size: 341.43437pt x 256.00247pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[3
-
-] <images/MLnewData.png, id=160, 562.2606pt x 421.575pt>
+ [3 <./images/MLtrainingData.png (PNG copy)>]
+<images/MLnewData.png, id=160, 562.2606pt x 421.575pt>
 File: images/MLnewData.png Graphic file (type png)
 
 <use images/MLnewData.png>
-Package pdftex.def Info: images/MLnewData.png used on input line 54.
+Package pdftex.def Info: images/MLnewData.png used on input line 84.
 (pdftex.def)             Requested size: 341.43437pt x 256.00247pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/MLWONnewData.png, id=161, 562.2606pt x 421.575pt>
+<images/MLWONnewData.png, id=162, 562.2606pt x 421.575pt>
 File: images/MLWONnewData.png Graphic file (type png)
 
 <use images/MLWONnewData.png>
-Package pdftex.def Info: images/MLWONnewData.png used on input line 61.
+Package pdftex.def Info: images/MLWONnewData.png used on input line 93.
 (pdftex.def)             Requested size: 341.43437pt x 256.00247pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[4 <./images/MLtrainingData.png (PNG copy)>]
-
-LaTeX Warning: Reference `fig:model4' on page 5 undefined on input line 87.
-
-File: images/MLtrainingData.png Graphic file (type png)
-<use images/MLtrainingData.png>
-Package pdftex.def Info: images/MLtrainingData.png used on input line 97.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
-File: images/MLnewData.png Graphic file (type png)
- <use images/MLnewData.png>
-Package pdftex.def Info: images/MLnewData.png used on input line 102.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
-File: images/MLWONnewData.png Graphic file (type png)
-
-<use images/MLWONnewData.png>
-Package pdftex.def Info: images/MLWONnewData.png used on input line 107.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: Citation 'WhenIsIt' on page 5 undefined on input line 116.
-
-[5 <./images/MLnewData.png (PNG copy)>] [6 <./images/MLWONnewData.png (PNG copy
-)>] <images/MLclassCondContoursDiseased.png, id=198, 562.2606pt x 421.575pt>
+[4] <images/MLclassCondContoursDiseased.png, id=177, 562.2606pt x 421.575pt>
 File: images/MLclassCondContoursDiseased.png Graphic file (type png)
 
 <use images/MLclassCondContoursDiseased.png>
 Package pdftex.def Info: images/MLclassCondContoursDiseased.png used on input l
-ine 121.
+ine 136.
 (pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
 
-<images/MLclassCondContoursHealthy.png, id=199, 562.2606pt x 421.575pt>
+<images/MLclassCondContoursHealthy.png, id=178, 562.2606pt x 421.575pt>
 File: images/MLclassCondContoursHealthy.png Graphic file (type png)
 
 <use images/MLclassCondContoursHealthy.png>
 Package pdftex.def Info: images/MLclassCondContoursHealthy.png used on input li
-ne 126.
+ne 141.
 (pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
 
-<images/MLWONclassCondContoursDiseased.png, id=200, 562.2606pt x 421.575pt>
+<images/MLWONclassCondContoursDiseased.png, id=179, 562.2606pt x 421.575pt>
 File: images/MLWONclassCondContoursDiseased.png Graphic file (type png)
 
 <use images/MLWONclassCondContoursDiseased.png>
 Package pdftex.def Info: images/MLWONclassCondContoursDiseased.png used on inpu
-t line 131.
+t line 146.
 (pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
 
-<images/MLWONclassCondContoursHealthy.png, id=201, 562.2606pt x 421.575pt>
+<images/MLWONclassCondContoursHealthy.png, id=180, 562.2606pt x 421.575pt>
 File: images/MLWONclassCondContoursHealthy.png Graphic file (type png)
 
 <use images/MLWONclassCondContoursHealthy.png>
 Package pdftex.def Info: images/MLWONclassCondContoursHealthy.png used on input
- line 136.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
-
-<images/MLprobContoursDiseased.png, id=202, 562.2606pt x 421.575pt>
-File: images/MLprobContoursDiseased.png Graphic file (type png)
-
-<use images/MLprobContoursDiseased.png>
-Package pdftex.def Info: images/MLprobContoursDiseased.png used on input line 1
-47.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
-
-<images/MLprobContoursHealthy.png, id=203, 562.2606pt x 421.575pt>
-File: images/MLprobContoursHealthy.png Graphic file (type png)
-
-<use images/MLprobContoursHealthy.png>
-Package pdftex.def Info: images/MLprobContoursHealthy.png used on input line 15
-2.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
-File: images/MLWONclassCondContoursDiseased.png Graphic file (type png)
-
-<use images/MLWONclassCondContoursDiseased.png>
-Package pdftex.def Info: images/MLWONclassCondContoursDiseased.png used on inpu
-t line 157.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
-File: images/MLWONclassCondContoursHealthy.png Graphic file (type png)
-
-<use images/MLWONclassCondContoursHealthy.png>
-Package pdftex.def Info: images/MLWONclassCondContoursHealthy.png used on input
- line 162.
+ line 151.
 (pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `men400CVRandSt' on page 7 undefined on input line 170
-.
+LaTeX Warning: Reference `CMLprob' on page 5 undefined on input line 159.
 
-[7 <./images/MLclassCondContoursDiseased.png (PNG copy)> <./images/MLclassCondC
+[5 <./images/MLnewData.png (PNG copy)>] [6 <./images/MLWONnewData.png (PNG copy
+)> <./images/MLclassCondContoursDiseased.png (PNG copy)> <./images/MLclassCondC
 ontoursHealthy.png (PNG copy)> <./images/MLWONclassCondContoursDiseased.png (PN
-G copy)> <./images/MLWONclassCondContoursHealthy.png (PNG copy)>] [8 <./images/
-MLprobContoursDiseased.png (PNG copy)> <./images/MLprobContoursHealthy.png (PNG
- copy)>] <images/MAPnewData.png, id=214, 562.2606pt x 421.575pt>
+G copy)> <./images/MLWONclassCondContoursHealthy.png (PNG copy)>]
+<images/MLprobContoursDiseased.png, id=192, 562.2606pt x 421.575pt>
+File: images/MLprobContoursDiseased.png Graphic file (type png)
+
+<use images/MLprobContoursDiseased.png>
+Package pdftex.def Info: images/MLprobContoursDiseased.png used on input line 1
+66.
+(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+
+<images/MLprobContoursHealthy.png, id=193, 562.2606pt x 421.575pt>
+File: images/MLprobContoursHealthy.png Graphic file (type png)
+
+<use images/MLprobContoursHealthy.png>
+Package pdftex.def Info: images/MLprobContoursHealthy.png used on input line 17
+1.
+(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+
+<images/MLWONprobContoursDiseased.png, id=194, 562.2606pt x 421.575pt>
+File: images/MLWONprobContoursDiseased.png Graphic file (type png)
+
+<use images/MLWONprobContoursDiseased.png>
+Package pdftex.def Info: images/MLWONprobContoursDiseased.png used on input lin
+e 176.
+(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+
+<images/MLWONprobContoursHealthy.png, id=195, 562.2606pt x 421.575pt>
+File: images/MLWONprobContoursHealthy.png Graphic file (type png)
+
+<use images/MLWONprobContoursHealthy.png>
+Package pdftex.def Info: images/MLWONprobContoursHealthy.png used on input line
+ 181.
+(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+ [7 <./images/MLprobContoursDiseased.png (PNG copy)> <./images/MLprobContoursHe
+althy.png (PNG copy)> <./images/MLWONprobContoursDiseased.png (PNG copy)> <./im
+ages/MLWONprobContoursHealthy.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig:CVT4' on page 8 undefined on input line 200.
+
+<images/MAPnewData.png, id=202, 562.2606pt x 421.575pt>
 File: images/MAPnewData.png Graphic file (type png)
 
 <use images/MAPnewData.png>
-Package pdftex.def Info: images/MAPnewData.png used on input line 191.
+Package pdftex.def Info: images/MAPnewData.png used on input line 210.
 (pdftex.def)             Requested size: 341.43437pt x 256.00247pt.
 
-<images/MAPWONnewData.png, id=215, 562.2606pt x 421.575pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/MAPWONnewData.png, id=203, 562.2606pt x 421.575pt>
 File: images/MAPWONnewData.png Graphic file (type png)
 
 <use images/MAPWONnewData.png>
-Package pdftex.def Info: images/MAPWONnewData.png used on input line 198.
+Package pdftex.def Info: images/MAPWONnewData.png used on input line 217.
 (pdftex.def)             Requested size: 341.43437pt x 256.00247pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 
-LaTeX Warning: Reference `fig:model4' on page 9 undefined on input line 224.
+LaTeX Warning: Reference `fig:CVT4' on page 8 undefined on input line 237.
 
-[9 <./images/MAPnewData.png (PNG copy)>]
-<images/MAPtrainingData.png, id=237, 562.2606pt x 421.575pt>
+
+LaTeX Warning: Reference `fig:CVT4' on page 8 undefined on input line 237.
+
+
+LaTeX Warning: Reference `fig:CVT4' on page 8 undefined on input line 239.
+
+
+LaTeX Warning: Reference `fig:CVT4' on page 8 undefined on input line 239.
+
+
+LaTeX Warning: Reference `fig:CVT4' on page 8 undefined on input line 241.
+
+
+LaTeX Warning: Reference `fig:CVT4' on page 8 undefined on input line 241.
+
+
+LaTeX Warning: Reference `fig:model4' on page 8 undefined on input line 243.
+
+[8]
+
+LaTeX Warning: Reference `men400-1' on page 9 undefined on input line 245.
+
+<images/MAPtrainingData.png, id=218, 562.2606pt x 421.575pt>
 File: images/MAPtrainingData.png Graphic file (type png)
 
 <use images/MAPtrainingData.png>
-Package pdftex.def Info: images/MAPtrainingData.png used on input line 234.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+Package pdftex.def Info: images/MAPtrainingData.png used on input line 253.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
 File: images/MAPnewData.png Graphic file (type png)
  <use images/MAPnewData.png>
-Package pdftex.def Info: images/MAPnewData.png used on input line 239.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+Package pdftex.def Info: images/MAPnewData.png used on input line 258.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
 File: images/MAPWONnewData.png Graphic file (type png)
 
 <use images/MAPWONnewData.png>
-Package pdftex.def Info: images/MAPWONnewData.png used on input line 244.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+Package pdftex.def Info: images/MAPWONnewData.png used on input line 263.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Citation 'WhenIsIt' on page 10 undefined on input line 253.
+LaTeX Warning: Reference `men400-1noSt' on page 9 undefined on input line 272.
 
-<images/MAPclassCondContoursDiseased.png, id=239, 562.2606pt x 421.575pt>
+
+LaTeX Warning: Citation 'WhenIsIt' on page 9 undefined on input line 272.
+
+<images/MAPclassCondContoursDiseased.png, id=219, 562.2606pt x 421.575pt>
 File: images/MAPclassCondContoursDiseased.png Graphic file (type png)
 
 <use images/MAPclassCondContoursDiseased.png>
 Package pdftex.def Info: images/MAPclassCondContoursDiseased.png used on input 
-line 258.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+line 277.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
 
-<images/MAPclassCondContoursHealthy.png, id=240, 562.2606pt x 421.575pt>
+<images/MAPclassCondContoursHealthy.png, id=220, 562.2606pt x 421.575pt>
 File: images/MAPclassCondContoursHealthy.png Graphic file (type png)
 
 <use images/MAPclassCondContoursHealthy.png>
 Package pdftex.def Info: images/MAPclassCondContoursHealthy.png used on input l
-ine 263.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+ine 282.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
 
-<images/MAPWONclassCondContoursDiseased.png, id=241, 562.2606pt x 421.575pt>
+<images/MAPWONclassCondContoursDiseased.png, id=221, 562.2606pt x 421.575pt>
 File: images/MAPWONclassCondContoursDiseased.png Graphic file (type png)
 
 <use images/MAPWONclassCondContoursDiseased.png>
 Package pdftex.def Info: images/MAPWONclassCondContoursDiseased.png used on inp
-ut line 268.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+ut line 287.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
 
-<images/MAPWONclassCondContoursHealthy.png, id=242, 562.2606pt x 421.575pt>
+<images/MAPWONclassCondContoursHealthy.png, id=222, 562.2606pt x 421.575pt>
 File: images/MAPWONclassCondContoursHealthy.png Graphic file (type png)
 
 <use images/MAPWONclassCondContoursHealthy.png>
 Package pdftex.def Info: images/MAPWONclassCondContoursHealthy.png used on inpu
-t line 273.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+t line 292.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<images/MAPprobContoursDiseased.png, id=243, 562.2606pt x 421.575pt>
+<images/MAPprobContoursDiseased.png, id=223, 562.2606pt x 421.575pt>
 File: images/MAPprobContoursDiseased.png Graphic file (type png)
 
 <use images/MAPprobContoursDiseased.png>
 Package pdftex.def Info: images/MAPprobContoursDiseased.png used on input line 
-284.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+303.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
 
-<images/MAPprobContoursHealthy.png, id=244, 562.2606pt x 421.575pt>
+<images/MAPprobContoursHealthy.png, id=224, 562.2606pt x 421.575pt>
 File: images/MAPprobContoursHealthy.png Graphic file (type png)
 
 <use images/MAPprobContoursHealthy.png>
-Package pdftex.def Info: images/MAPprobContoursHealthy.png used on input line 2
-89.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
-File: images/MAPWONclassCondContoursDiseased.png Graphic file (type png)
+Package pdftex.def Info: images/MAPprobContoursHealthy.png used on input line 3
+08.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
 
-<use images/MAPWONclassCondContoursDiseased.png>
-Package pdftex.def Info: images/MAPWONclassCondContoursDiseased.png used on inp
-ut line 294.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
-File: images/MAPWONclassCondContoursHealthy.png Graphic file (type png)
+<images/MAPWONprobContoursDiseased.png, id=225, 562.2606pt x 421.575pt>
+File: images/MAPWONprobContoursDiseased.png Graphic file (type png)
 
-<use images/MAPWONclassCondContoursHealthy.png>
-Package pdftex.def Info: images/MAPWONclassCondContoursHealthy.png used on inpu
-t line 299.
-(pdftex.def)             Requested size: 170.71393pt x 127.99802pt.
+<use images/MAPWONprobContoursDiseased.png>
+Package pdftex.def Info: images/MAPWONprobContoursDiseased.png used on input li
+ne 313.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
+
+<images/MAPWONprobContoursHealthy.png, id=226, 562.2606pt x 421.575pt>
+File: images/MAPWONprobContoursHealthy.png Graphic file (type png)
+
+<use images/MAPWONprobContoursHealthy.png>
+Package pdftex.def Info: images/MAPWONprobContoursHealthy.png used on input lin
+e 318.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-LaTeX Warning: Reference `men400CVRandSt' on page 10 undefined on input line 30
-7.
+LaTeX Warning: Reference `men400CVRandSt' on page 9 undefined on input line 326
+.
 
-[10 <./images/MAPWONnewData.png (PNG copy)>]
+[9 <./images/MAPnewData.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\\' on input line 310.
+(hyperref)                removing `\\' on input line 329.
 
-[11 <./images/MAPtrainingData.png (PNG copy)>]) [12 <./images/MAPclassCondConto
-ursDiseased.png (PNG copy)> <./images/MAPclassCondContoursHealthy.png (PNG copy
-)> <./images/MAPWONclassCondContoursDiseased.png (PNG copy)> <./images/MAPWONcl
-assCondContoursHealthy.png (PNG copy)>] [13 <./images/MAPprobContoursDiseased.p
-ng (PNG copy)> <./images/MAPprobContoursHealthy.png (PNG copy)>]
+File: images/MLnewData.png Graphic file (type png)
+<use images/MLnewData.png>
+Package pdftex.def Info: images/MLnewData.png used on input line 337.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
+File: images/MLWONnewData.png Graphic file (type png)
+ <use images/MLWONnewData.png>
+Package pdftex.def Info: images/MLWONnewData.png used on input line 342.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
+File: images/MAPnewData.png Graphic file (type png)
+
+<use images/MAPnewData.png>
+Package pdftex.def Info: images/MAPnewData.png used on input line 347.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
+File: images/MAPWONnewData.png Graphic file (type png)
+ <use images/MAPWONnewData.png>
+Package pdftex.def Info: images/MAPWONnewData.png used on input line 352.
+(pdftex.def)             Requested size: 209.1301pt x 156.80368pt.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[10 <./images/MAPWONnewData.png (PNG copy)>]) [11 <./images/MAPtrainingData.png
+ (PNG copy)>] [12 <./images/MAPclassCondContoursDiseased.png (PNG copy)> <./ima
+ges/MAPclassCondContoursHealthy.png (PNG copy)> <./images/MAPWONclassCondContou
+rsDiseased.png (PNG copy)> <./images/MAPWONclassCondContoursHealthy.png (PNG co
+py)>] [13 <./images/MAPprobContoursDiseased.png (PNG copy)> <./images/MAPprobCo
+ntoursHealthy.png (PNG copy)> <./images/MAPWONprobContoursDiseased.png (PNG cop
+y)> <./images/MAPWONprobContoursHealthy.png (PNG copy)>] [14]
 
 LaTeX Warning: Empty bibliography on input line 81.
 
-[14
+[15
 
 ]
 \openout2 = `sections/appendixA.aux'.
 
- (./sections/appendixA.tex) [15
+ (./sections/appendixA.tex) [16
 
 ]
 \openout2 = `sections/appendixB.aux'.
 
- (./sections/appendixB.tex) [16
+ (./sections/appendixB.tex) [17
 
 
 ]
@@ -2039,33 +2031,32 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 88.
  )
 (\end occurred inside a group at level 3)
 
-### simple group (level 3) entered at line 310 ({)
-### simple group (level 2) entered at line 173 ({)
-### simple group (level 1) entered at line 37 ({)
+### simple group (level 3) entered at line 329 ({)
+### simple group (level 2) entered at line 190 ({)
+### simple group (level 1) entered at line 65 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 18905 strings out of 493014
- 305346 string characters out of 6133350
- 887184 words of memory out of 5000000
- 21954 multiletter control sequences out of 15000+600000
- 70887 words of font info for 129 fonts, out of 8000000 for 9000
+ 19038 strings out of 493014
+ 307872 string characters out of 6133350
+ 890765 words of memory out of 5000000
+ 22021 multiletter control sequences out of 15000+600000
+ 69967 words of font info for 174 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 53i,8n,92p,938b,1657s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cfr-lm/dotd
-igits-clm.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cfr-lm/t1-clm
-.enc}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/loc
-al/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/lm/lmss12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
-ublic/lm/lmss17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/l
-mss9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsso10.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsso8.pfb>
-Output written on report.pdf (17 pages, 2106724 bytes).
+ 53i,8n,92p,938b,1651s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.en
+c}{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cfr-lm/dotdigits-clm.enc}
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cfr-lm/t1-clm.enc}{/usr/loc
+al/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}</usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/local/texlive/2016/texmf-d
+ist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/lm/lmss17.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/lm/lmss9.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmssb
+x10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsso10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsso8.pfb>
+Output written on report.pdf (18 pages, 2544546 bytes).
 PDF statistics:
- 329 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 24296 words of extra memory for PDF output out of 24883 (max. 10000000)
+ 318 PDF objects out of 1000 (max. 8388607)
+ 264 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
+ 24316 words of extra memory for PDF output out of 24883 (max. 10000000)
 

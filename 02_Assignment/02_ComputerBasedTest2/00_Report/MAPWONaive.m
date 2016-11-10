@@ -21,7 +21,7 @@ load cbt2data.mat
 X_train = [diseased'; healthy']; % We put the training data into a single matrix
 t_train = [ones(length(diseased'),1); ones(length(healthy'),1).*2]; % We give diseased a label of 1, healthy a label of 2
 X_new = newpts'; % load new points
-savePlots = 0; % 0 = don't save, 1 = save
+savePlots = 1; % 0 = don't save, 1 = save
 
 %% We compute the prior
 class1Total = sum(t_train==1); % We count the number of diseased patients
@@ -154,7 +154,7 @@ for i = 1:2
     end
     
     contour(Xv,Yv,Probs(:,:,i)); % plot contour line
-    ti = sprintf('Density contours for class conditional %g, %s',i, classLabel{i});
+    ti = sprintf('MAP Density Contours for Class %g, %s',i, classLabel{i});
     xlabel('Concentration of Chemical 1','fontsize',16);
     ylabel('Concentration of Chemical 2','fontsize',16);
     title(ti, 'fontsize',18);
