@@ -11,8 +11,6 @@
 % Reference 1: bayesclass.m, A First Course in Machine Learning, Chapter 5.
 % Reference 2: bayestraintest.m, Machine Learning (Extended)
 
-% NOTE: do we want to compare the labels between ML, MAP, Naive, WONaive
-% build separate program for this without plots?
 %% ******************* ANALYSIS *******************
 %  ************************************************
 %% We load the data
@@ -114,9 +112,7 @@ end
 
 xlabel('Concentration of Chemical 1','fontsize',16);
 ylabel('Concentration of Chemical 2','fontsize',16);
-title({'Increase in concentration of chemical 1';...
-    'indicates patient more likely to be diseased,';...
-    'chemical 2 concentration of ~16 is worst'},'fontsize',18); 
+title({'Classification of new data with ML WON'},'fontsize',18); 
 xlim([-2 12]), ylim([4 18]);
 colorbar('eastoutside');
 legend('Diseased', 'Healthy');
