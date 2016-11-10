@@ -4,12 +4,14 @@
 % We train it on the helthy and diseased datasets
 % provided in cbt2data.mat with and without
 
-% This includes all 4 methods (ML and MAP Naive, ML and MAP wo Naive)
+% Whilst all 4 methods (ML and MAP Naive, ML and MAP wo Naive)
 
 % Based on the following files
 % Reference 1: bayesclass.m, A First Course in Machine Learning, Chapter 5.
 % Reference 2: bayestraintest.m, Machine Learning (Extended)
 
+% NOTE: do we want to compare the labels between ML, MAP, Naive, WONaive
+% build separate program for this without plots?
 %% ******************* ANALYSIS *******************
 %  ************************************************
 %% We load the data

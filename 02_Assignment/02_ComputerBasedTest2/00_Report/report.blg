@@ -4,12 +4,15 @@ The top-level auxiliary file: report.aux
 A level-1 auxiliary file: sections/introduction.aux
 A level-1 auxiliary file: sections/appendixA.aux
 A level-1 auxiliary file: sections/appendixB.aux
+A level-1 auxiliary file: sections/appendixC.aux
+A level-1 auxiliary file: sections/appendixD.aux
+A level-1 auxiliary file: sections/appendixE.aux
 I found no \citation commands---while reading file report.aux
 I found no \bibdata command---while reading file report.aux
 I found no \bibstyle command---while reading file report.aux
 You've used 0 entries,
             0 wiz_defined-function locations,
-            86 strings with 555 characters,
+            89 strings with 621 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

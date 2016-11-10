@@ -11,8 +11,6 @@
 % Reference 1: bayesclass.m, A First Course in Machine Learning, Chapter 5.
 % Reference 2: bayestraintest.m, Machine Learning (Extended)
 
-% NOTE: do we want to compare the labels between ML, MAP, Naive, WONaive
-% build separate program for this without plots?
 %% ******************* ANALYSIS *******************
 %  ************************************************
 %% We load the data

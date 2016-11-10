@@ -1,5 +1,5 @@
 %% This program trains a Bayesian classifier
-% using the Maximum likelihood estimate WITHOUT naive assumption.
+% using the Maximum A Posteriori estimate WITHOUT naive assumption.
 % We train it on the helthy and diseased datasets
 % provided in cbt2data.mat
 
@@ -11,8 +11,6 @@
 % Reference 1: bayesclass.m, A First Course in Machine Learning, Chapter 5.
 % Reference 2: bayestraintest.m, Machine Learning (Extended)
 
-% NOTE: do we want to compare the labels between ML, MAP, Naive, WONaive
-% build separate program for this without plots?
 %% ******************* ANALYSIS *******************
 %  ************************************************
 %% We load the data
@@ -21,7 +19,7 @@ load cbt2data.mat
 X_train = [diseased'; healthy']; % We put the training data into a single matrix
 t_train = [ones(length(diseased'),1); ones(length(healthy'),1).*2]; % We give diseased a label of 1, healthy a label of 2
 X_new = newpts'; % load new points
-savePlots = 1; % 0 = don't save, 1 = save
+savePlots = 0; % 0 = don't save, 1 = save
 
 %% We compute the prior
 class1Total = sum(t_train==1); % We count the number of diseased patients
