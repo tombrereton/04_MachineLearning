@@ -2,20 +2,14 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {1}{\ignorespaces Mean of Chemical Concentrations for ML\relax }}{4}{table.caption.7}
+\contentsline {table}{\numberline {1}{\ignorespaces Mean of Diseased and Healthy Class for Training Data\relax }}{5}{table.caption.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {2}{\ignorespaces Class 1 (Diseased) variance of Chemical Concentrations for ML\relax }}{5}{table.caption.9}
+\contentsline {table}{\numberline {2}{\ignorespaces Class 1 (Diseased) variance of Chemical Concentrations for ML (or MAP)\relax }}{5}{table.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {3}{\ignorespaces Class 2 (Healthy) variance of Chemical Concentrations for ML\relax }}{5}{table.caption.10}
+\contentsline {table}{\numberline {3}{\ignorespaces Class 2 (Healthy) variance of Chemical Concentrations for ML (or MAP)\relax }}{5}{table.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {4}{\ignorespaces Class 1 Covariance of Chemical Concentrations for ML (or MAP) WON\relax }}{6}{table.caption.11}
+\contentsline {table}{\numberline {4}{\ignorespaces Class 1 (Diseased) Covariance of Chemical Concentrations for ML (or MAP) WON\relax }}{6}{table.caption.11}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {5}{\ignorespaces Class 2 Covariance of Chemical Concentrations for ML (or MAP) WON\relax }}{6}{table.caption.12}
+\contentsline {table}{\numberline {5}{\ignorespaces Class 2 (Healthy) Covariance of Chemical Concentrations for ML (or MAP) WON\relax }}{6}{table.caption.12}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {6}{\ignorespaces Classification Differences between Methods\relax }}{7}{table.caption.15}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7}{\ignorespaces Mean of Chemical Concentrations for MAP (Identical to ML)\relax }}{9}{table.caption.19}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8}{\ignorespaces Class 1 Covariance of Chemical Concentrations for MAP WON\relax }}{9}{table.caption.20}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {9}{\ignorespaces Class 2 Covariance of Chemical Concentrations for MAP WON\relax }}{9}{table.caption.21}
+\contentsline {table}{\numberline {6}{\ignorespaces Classification Differences between Methods\relax }}{10}{table.caption.18}
