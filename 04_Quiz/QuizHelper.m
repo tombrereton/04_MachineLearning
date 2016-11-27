@@ -33,3 +33,13 @@ plot(x,y,'bx');
 hold on;
 plot(x, X * w, 'r');
 % plot(x, pred, 'b');
+
+
+%% Squeared Euclidiean Distance
+
+x = [-1;0]
+y = [2;1];
+
+g = x - y
+
+Euc = g'*g
