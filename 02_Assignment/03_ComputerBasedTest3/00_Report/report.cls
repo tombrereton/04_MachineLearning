@@ -56,7 +56,7 @@
   \begin{minipage}[t]{1.0\textwidth}
   	\begin{flushright}
   	\Large{Machine Learning (Extended)}\\
-	\Huge{Computer Based Test 2 \\ Bayesian Classification}\\
+	\Huge{Computer Based Test 3 \\ Clustering}\\
 	\Large \today
   	\end{flushright}
     \end{minipage}

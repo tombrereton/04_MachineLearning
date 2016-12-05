@@ -1,0 +1,17 @@
+[0] Config.pm:343> INFO - This is Biber 2.5
+[0] Config.pm:346> INFO - Logfile is 'report.blg'
+[63] biber-darwin:290> INFO - === Sun Dec  4, 2016, 19:28:33
+[95] Biber.pm:351> INFO - Reading 'report.bcf'
+[195] Biber.pm:773> INFO - Using all citekeys in bib section 0
+[211] Biber.pm:3493> INFO - Processing section 0
+[240] Biber.pm:3657> INFO - Looking for bibtex format file 'publications.bib' for section 0
+[244] bibtex.pm:1187> INFO - Decoding LaTeX character macros into UTF-8
+[246] bibtex.pm:1048> INFO - Found BibTeX data source 'publications.bib'
+[287] Utils.pm:149> WARN - ISBN '1439824142, 9781439824146' in entry 'Rogers:2011:FCM:2071030' is invalid - run biber with '--validate_datamodel' for details.
+[301] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[301] UCollate.pm:66> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[301] Biber.pm:3306> INFO - Sorting list 'none/global/' of type 'entry' with scheme 'none' and locale 'en-US'
+[301] Biber.pm:3310> INFO - No sort tailoring available for locale 'en-US'
+[305] bbl.pm:526> INFO - Writing 'report.bbl' with encoding 'UTF-8'
+[306] bbl.pm:619> INFO - Output to report.bbl
+[307] Biber.pm:108> INFO - WARNINGS: 1

@@ -2,22 +2,18 @@
 \defcounter {refsection}{0}\relax 
 \select@language {english}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Training Data for the 4 methods outlined in this report.\relax }}{2}{figure.caption.4}
+\contentsline {figure}{\numberline {1}{\ignorespaces Community matrices for 10 clusters\relax }}{3}{figure.caption.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2}{\ignorespaces Maximum Likelihood classification of new data\relax }}{3}{figure.caption.5}
+\contentsline {figure}{\numberline {2}{\ignorespaces Difference community matrix for 10 clusters\relax }}{3}{figure.caption.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {3}{\ignorespaces Maximum Likelihood without Naive assumption classification of new data\relax }}{4}{figure.caption.6}
+\contentsline {figure}{\numberline {3}{\ignorespaces Community matrices for 20 clusters\relax }}{4}{figure.caption.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4}{\ignorespaces Comparison of ML class conditional density contours for each class and with Naive and without Naive assumption\relax }}{4}{figure.caption.7}
+\contentsline {figure}{\numberline {4}{\ignorespaces Difference community matrix for 20 clusters\relax }}{5}{figure.caption.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5}{\ignorespaces Comparison of ML probability contours for each class and with Naive and without Naive assumption\relax }}{5}{figure.caption.13}
+\contentsline {figure}{\numberline {5}{\ignorespaces Community matrices for 30 clusters\relax }}{5}{figure.caption.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6}{\ignorespaces Maximum a posteriori classification of new data\relax }}{6}{figure.caption.14}
+\contentsline {figure}{\numberline {6}{\ignorespaces Difference community matrix for 30 clusters\relax }}{6}{figure.caption.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {7}{\ignorespaces Maximum a posteriori without Naive assumption classification of new data\relax }}{7}{figure.caption.15}
+\contentsline {figure}{\numberline {7}{\ignorespaces Elbow plot for healthy controls\relax }}{7}{figure.caption.10}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {8}{\ignorespaces Comparison of MAP density contours for each class and with Naive and without Naive assumption\relax }}{8}{figure.caption.16}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {9}{\ignorespaces Comparison of MAP probability contours for each class and with Naive and without Naive assumption\relax }}{9}{figure.caption.17}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {10}{\ignorespaces Comparison of classification of new data by ML, MLWON, MAP, and MAPWON\relax }}{11}{figure.caption.19}
+\contentsline {figure}{\numberline {8}{\ignorespaces Elbow plot for diseased controls\relax }}{8}{figure.caption.11}

@@ -1,6 +1,3 @@
-%% Description
-% Add description
-% Add references
 %% Preamble
 clear all; close all; clc;
 savePlots = 0;

@@ -1,0 +1,115 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.7 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \sortlist[entry]{none/global/}
+    \entry{BrainRegion}{article}{}
+      \name{author}{7}{}{%
+        {{hash=2f4cc163c8766d4437008ea260208de8}{%
+           family={Zhang},
+           family_i={Z\bibinitperiod},
+           given={Jie},
+           given_i={J\bibinitperiod}}}%
+        {{hash=6daab9c045b3d0fc9e6183326e04b8ff}{%
+           family={Cheng},
+           family_i={C\bibinitperiod},
+           given={Wei},
+           given_i={W\bibinitperiod}}}%
+        {{hash=a7d61a96a606dcbdf322503be2347118}{%
+           family={Wang},
+           family_i={W\bibinitperiod},
+           given={ZhengGe},
+           given_i={Z\bibinitperiod}}}%
+        {{hash=f61011454643a56db605b41dd9a768ca}{%
+           family={Zhang},
+           family_i={Z\bibinitperiod},
+           given={ZhiQiang},
+           given_i={Z\bibinitperiod}}}%
+        {{hash=8a4247988800abac96b4fce13e939aac}{%
+           family={Lu},
+           family_i={L\bibinitperiod},
+           given={WenLian},
+           given_i={W\bibinitperiod}}}%
+        {{hash=9fe1dfd13d8eef594dfca726e44222bd}{%
+           family={Lu},
+           family_i={L\bibinitperiod},
+           given={GuangMing},
+           given_i={G\bibinitperiod}}}%
+        {{hash=9eaddaa496bf0b91ab3628d26d177ac1}{%
+           family={Feng},
+           family_i={F\bibinitperiod},
+           given={Jianfeng},
+           given_i={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Public Library of Science}%
+      }
+      \strng{namehash}{7cf8eaf74a2659f76a70a943f2d3282a}
+      \strng{fullhash}{1b59e428cac10ecad0f93e38b634b447}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The accurate prediction of general neuropsychiatric disorders, on an individual basis, using resting-state functional magnetic resonance imaging (fMRI) is a challenging task of great clinical significance. Despite the progress to chart the differences between the healthy controls and patients at the group level, the pattern classification of functional brain networks across individuals is still less developed. In this paper we identify two novel neuroimaging measures that prove to be strongly predictive neuroimaging markers in pattern classification between healthy controls and general epileptic patients. These measures characterize two important aspects of the functional brain network in a quantitative manner: (i) coordinated operation among spatially distributed brain regions, and (ii) the asymmetry of bilaterally homologous brain regions, in terms of their global patterns of functional connectivity. This second measure offers a unique understanding of brain asymmetry at the network level, and, to the best of our knowledge, has not been previously used in pattern classification of functional brain networks. Using modern pattern-recognition approaches like sparse regression and support vector machine, we have achieved a cross-validated classification accuracy of 83.9\% (specificity: 82.5\%; sensitivity: 85\%) across individuals from a large dataset consisting of 180 healthy controls and epileptic patients. We identified significantly changed functional pathways and subnetworks in epileptic patients that underlie the pathophysiological mechanism of the impaired cognitive functions. Specifically, we find that the asymmetry of brain operation for epileptic patients is markedly enhanced in temporal lobe and limbic system, in comparison with healthy individuals. The present study indicates that with specifically designed informative neuroimaging markers, resting-state fMRI can serve as a most promising tool for clinical diagnosis, and also shed light onto the physiology behind complex neuropsychiatric disorders. The systematic approaches we present here are expected to have wider applications in general neuropsychiatric disorders.}
+      \field{journaltitle}{PLOS ONE}
+      \field{month}{05}
+      \field{number}{5}
+      \field{title}{Pattern Classification of Large-Scale Functional Brain Networks: Identification of Informative Neuroimaging Markers for Epilepsy}
+      \field{volume}{7}
+      \field{year}{2012}
+      \field{pages}{1\bibrangedash 11}
+      \range{pages}{11}
+      \verb{doi}
+      \verb 10.1371/journal.pone.0036733
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1371%5C%2Fjournal.pone.0036733
+      \endverb
+    \endentry
+    \entry{Rogers:2011:FCM:2071030}{book}{}
+      \name{author}{2}{}{%
+        {{hash=2f6fd6b38926301817039137e1b1ff2c}{%
+           family={Rogers},
+           family_i={R\bibinitperiod},
+           given={Simon},
+           given_i={S\bibinitperiod}}}%
+        {{hash=29d5a93ca5a81c990256c62b097f65bb}{%
+           family={Girolami},
+           family_i={G\bibinitperiod},
+           given={Mark},
+           given_i={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Chapman \& Hall/CRC}%
+      }
+      \strng{namehash}{bc7cbece0ade438ea9722faba50c5ae3}
+      \strng{fullhash}{bc7cbece0ade438ea9722faba50c5ae3}
+      \field{sortinit}{0}
+      \field{sortinithash}{990108227b3316c02842d895999a0165}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1st}
+      \field{isbn}{1439824142, 9781439824146}
+      \field{title}{A First Course in Machine Learning}
+      \field{year}{2011}
+    \endentry
+  \endsortlist
+\endrefsection
+\endinput
+
